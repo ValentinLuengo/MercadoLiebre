@@ -140,11 +140,11 @@ main.form{
 }
 
 .precio{
-    width: 30%;
+    flex-grow: 3;
     font-size: 18px;
 }
 .descuentos{
-    width: 70%;
+    flex-grow: 7;
     color:#39b54a ;
     font-size: 16px;
 }
@@ -196,10 +196,18 @@ footer section article{
     padding: 15px 10px
 }
 
+#name{
+    width: 70%;
+    height: 30px;
+}
+#contraseña{
+    width: 70%;
+    height: 30px;
+}
 @media (min-width: 361px){
 .header {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0px 15px 15px 15px;
@@ -224,11 +232,13 @@ footer section article{
     }
     #izquierda{
         display: flex;
+        flex-wrap: wrap;
         padding: 5px;
         gap: 10px; 
     }
     #derecha{
     display: flex;
+    flex-wrap: wrap;
     padding: 5px;
     gap: 10px;
 }
@@ -244,7 +254,7 @@ footer section article{
     .burger{
         display: none;
     }
-   
+    
 }
 
 @media (min-width: 769px){
@@ -255,5 +265,67 @@ footer section article{
     .ofertas{
         display: flex;
         flex-wrap: nowrap;
+    }
+    footer section{
+        display: flex;
+        position: relative;
+
+    }
+    #copy{
+        position: absolute;
+        bottom: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .descripciones{
+        position: relative;
+        left: 20px;
+        display: block;
+        color: transparent;
+        transition: 500ms ease-in-out;
+        transition-property: all;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+    .descripciones:hover{
+        left: 0px;
+        color: black
+    }
+    .producto{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        box-shadow: none;
+        text-align: justify;
+        background-color:white;
+        transition-property: all;
+        transition-duration: 500ms ;
+    }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .Camiosito{
+        transition-property: all;
+        transition-duration: 500ms ;
+    }
+    .Camiosito:hover{
+        transform: rotateZ(-90deg);
+    }
+    .iniciarsesion{
+        transition-property: all;
+        transition-duration: 500ms ;
+    }
+    .iniciarsesion:hover{
+       background-color:  #0022AA;
+    }
+    .icon{
+        transition-property: all;
+        transition-duration: 500ms ;
+    }
+    .icon:hover{
+        font-size: 30px;
+        color: #EAC926;
+        
     }
 }
