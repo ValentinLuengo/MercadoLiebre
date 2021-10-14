@@ -21,46 +21,142 @@ header{
     background-color:#EAC926 ;
     text-align: center;
 }
-
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.barraDeBusqueda{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    display: list-item;
+}
+a{
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.busqueda{
+    width: 90%;
+}
+#BarraDeBusqueda{
+    display: flex;
+}
+.link {
+    display: none;
+}
+.logo {
+    width: 45%;
+}
+form{
+display: block;
+margin-top: 0em;
+}
 h3{
     font-size: 24px;
 }
-.producto img{
-    border-bottom:#666 1px solid ;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+.prueba{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:white;
+    margin: 10px 20px;
+    border-radius: 15px;
+}
+main.form{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    height: 60vh;
+    width: 90%;
+}
+.iniciarsesion{
+    margin: 5px;
+ background-color: #1259c3;
+    width: 125px;
+    height: 35px;
+    border-radius: 10px;
+}
+.insec{
+    font-weight: bold;
+    color: white;
+    box-shadow: black ;
 }
 .producto{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     text-align: justify;
-    border: 1px solid #ebebeb;
     background-color:white;
-    padding: 15px;
+}
+.visita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.Camiosito{
+    position: absolute;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    color:#39b54a ;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: #FFF;
+    text-align: center;
+    right: 20px;
+    top: -15px;
 }
 
-.Camiosito{
-    border: 1px solid #39b54a;
-    border-radius: 15px;
-    color:#39b54a ;
-    height: 22px;
-    width: 22px;
-    text-align: center;
-}
-main{
-    text-align: center;
-    margin: auto;
-    width: 90%;
-}
 .precio{
+    width: 30%;
     font-size: 18px;
 }
 .descuentos{
+    width: 70%;
     color:#39b54a ;
     font-size: 16px;
 }
 .descripciones{
-    display: flex;
+    display: none;
     font-size: 16px;
+}
+.description-flex{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    width: 100%;
 }
 .burger-menu{
     font-size: 15px;
@@ -82,9 +178,7 @@ main{
     display: none;
     text-align: justify;
 }
-#barraDeBusqueda{
-    text-align: justify;
-}
+
 .icon{
     font-size: 2em;
     margin-bottom: 10px;
@@ -99,34 +193,65 @@ footer section article{
     margin-bottom: 10px;
     padding: 15px 10px
 }
-#registro{
-    text-align: center;
-    padding: 5px;
-    margin: auto;
-    background-color: #ebebeb;
-    border-radius: 5px;
-}
-label{
-    font-size: 12px;
-}
+
 @media (min-width: 361px){
-    .cuenta{
-        display: block;
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px 15px 15px;
+}
+.logo{
+    width: 30%;
+    padding: 0px;
+}
+#barraDeBusqueda{
+    width: 80%;
+    justify-content: space-around;
+}
+
+.compra {
+    width: 30%;
+    padding: 0px;
+}
+   .link{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
     }
-    .venta{
-        display:block
+    #izquierda{
+        display: flex;
+        padding: 5px;
+        gap: 10px; 
     }
+    #derecha{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+}
     .descripciones{
         display: block;
         font-size: 16px;
     }
+
     .producto{
+        width: 40%;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
+    .burger{
+        display: none;
+    }
+   
 }
 
 @media (min-width: 769px){
-
-
+.visita{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .ofertas{
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }

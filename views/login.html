@@ -9,50 +9,56 @@
     </head>
     <body>
         <header>
-            <section>
-            <img src="/images/logo-mercado-liebre.svg" width="300px">
-            <article id="barraDeBusqueda">
-                <label>
-                <input type="search" placeholder="Buscar productos, marcas">
-                <p><button type="submit"><i class="fas fa-search"></i></button></p>
-                </label>
-            </article>
-            <article>
-                <p> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-            </article>
-            <article class="venta">
-                    <p>Ofertas</p>
-                    <p>Tiendas Oficiales</p>
-                    <p>Vender</p>
-                    <p>Ayuda</p>
-            </article>
-            <article class="cuenta">
-                <a href="/registro">Creá tu cuenta</a><i class="far fa-id-card"></i><br>
-                <a href="/login">Ingresa</a><i class="fas fa-sign-in-alt"></i><br>
-                <a>Mis compras<i class="fas fa-shopping-basket"></i></a>
-            </article>
-            <article>
-            <div class="burger">
-                <div class="burger-menu">
-                    <i class="fas fa-bars"></i>
+            <div class="header">
+    
+                <div class="logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                </div>
+    
+                <div class="barraDeBusqueda">
+                    <form action="get" method="GET" id="barraDeBusqueda">
+                        <label for="barraDeBusqueda"></label>
+                        <input class="busqueda" type="text" name="barraDeBusqueda" placeholder="Buscar productos, marcas">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+    
+                <div class="comprar">
+                    <p>
+                        <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+                    </p>
                 </div>
             </div>
-            </article>
-            <img src="/images/img-home-banner.jpg" width="100%">
-        </section>     
+    
+            <nav class="link">
+                <ul id="izquierda">
+                    <li><a href="/">Ofertas</a></li>
+                    <li><a href="/">TIendas Oficiales</a></li>
+                    <li><a href="/">Vender</a></li>
+                    <li><a href="/">Ayuda</a></li>
+                </ul>
+                <ul id="derecha">
+                    <li><a href="/registro">Creá tu cuenta</a> <i class="far fa-id-card"></i></li>
+                    <li><a href="./login">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#">Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <i class="fas fa-bars burger"></i>
+            </div>
+            
         </header>
-        <section id="login">
-            <h3>Registro de Usuario</h3>
-            <form action="Login-Usuario" method="POST">
+        <img src="/images/img-home-banner.jpg"  width="100%">
+        <main id="login">
+            <h3>Iniciar sesion</h3>
+            <form action="#" method="POST">
                 <label for="user">Nombre de Usuario:</label><br>
                 <input type="text" id="name" name="name"><br>
-                <label for="user">Nombre de usuario:</label><br>
-                <input type="text" id="user" name="user"><br>
                 <label for="contraseña">Contraseña</label><br>
                 <input type="password" id="contraseña"><br>
-                <button><a href="/">enviar</a></button>
+                <button href="/" class="iniciarsesion"><a class="insec" href="/">ENVIAR</a></button>
             </form>
-        </section>
+        </main>
         <footer>
             <section>
                <article>
@@ -83,3 +89,4 @@
             </section>
         </footer>
     </body>
+</html>
